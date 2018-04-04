@@ -29,10 +29,16 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		String user = request.getParameter("user");
+		
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
 		
 		out.write("<html>");
-		out.write("user via get: " + user);
+		out.write("User info via GET");
+		out.write("<br/><br/>");
+		out.write("user email: " + email);
+		out.write("<br/>");
+		out.write("password: " + password);
 		out.write("</html>");
 	}
 
@@ -41,10 +47,16 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		String user = request.getParameter("user");
+		
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
 		
 		out.write("<html>");
-		out.write("user via post: " + user);
+		out.write("User info via POST");
+		out.write("<br/><br/>");
+		out.write("user email: " + email);
+		out.write("<br/>");
+		out.write("password: " + password);
 		out.write("</html>");
 	}
 

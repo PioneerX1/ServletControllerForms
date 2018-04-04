@@ -10,8 +10,11 @@
 
 	<h3>Form input using GET http request</h3>
 	<form action="/Forms/Controller" method="get">
-		<label>Enter user's name: </label>
-		<input type="text" name="user" />
+		<label>Enter user's email: </label>
+		<input type="text" name="email" />
+		<br/>
+		<label>Enter user's password: </label>
+		<input type="text" name="password" />
 		<input type="submit" value="OK" />
 	</form>
 	
@@ -19,10 +22,26 @@
 	
 	<h3>Form input using POST http request</h3>
 	<form action="/Forms/Controller" method="post">
-		<label>Enter user's name: </label>
-		<input type="text" name="user" />
+		<label>Enter user's email: </label>
+		<input type="text" name="email" />
+		<br/>
+		<label>Enter user's password: </label>
+		<input type="text" name="password" />
 		<input type="submit" value="OK" />
 	</form>
+	
+	<br/>
+	
+	<h3>Form input using BEAN and POST http request</h3>
+	<form action="/Forms/formhandler.jsp" method="post">
+		<label>Enter user's email: </label>
+		<input type="text" name="email" />
+		<br/>
+		<label>Enter user's password: </label>
+		<input type="text" name="password" />
+		<input type="submit" value="OK" />
+	</form>
+	
 
 </body>
 </html>
